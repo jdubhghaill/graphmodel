@@ -8,18 +8,19 @@ Installation
 ------------
 
 This application was created using NodeJs 5.1.0 and NPM 3.3.12. You will need to install nodejs 5.1.0 from either the [nodejs website](https://nodejs.org/en/)
-or from your operating systems repositories and add it to your path. Once you have node and npm installed (try running npm -v to check) you can run this
-application by using the npm command in the root on the project using a terminal. All the projects npm dependencies are packaged with it so you should be
-ready to go.
+or from your operating systems repositories and add it to your path. Once you have node and npm installed (try running npm -v to check) you can either clone
+this application from git or extract the tar.gz package. If you have used git you won't have the dependencies installed (there will be no node_modules folder in the
+project), this can be fixed by running: **npm install** in the project root.
 
 Running
 -------
 
 **npm start file={path} {command} {arguments..}**
 
-The application can be run from the root of the project directory with the commmand npm start. A file containing the graph data should be passed
+The application can be run from the root of the project directory with the commmand 'npm start'. A file containing the graph data should be passed
 with the file={path} argument. The graph data should comma separated as in the following example:
-AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7
+AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7  
+There is a file 'example.data' in the project with this data in that you can use.
 
 There are 5 possible commands that can passed each of which require their own arguments. They are:
 
